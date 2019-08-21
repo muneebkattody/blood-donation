@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Register as a doner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/w3.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <style>
+        input {
+            margin-bottom: 20px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="humburger-out" onclick="navOpen()">
+        <div class="humburger-in"></div>
+        <div class="humburger-in"></div>
+        <div class="humburger-in"></div>
+    </div>
+    <div class="w3-container header" style="margin-left:6%" id="header">
+        <img src="images/nss-logo.png" alt="nss-logo" class="logo" />
+        <a href="index.html" class="header-nav">Home</a>
+        <a href="register.html" class="header-nav">Register</a>
+        <a href="search.html" class="header-nav">Request</a>
+        <a href="faq.html" class="header-nav">Faq</a>
+        <a href="contact.html" class="header-nav">Contact</a>
+
+        <div class="about-in-nav">
+            <p class="content">
+                Blood donation camp in Sree Narayana College Vadakara by NSS UNIT 07
+            </p>
+        </div>
+    </div>
+    <div class="w3-container">
+        <div class="input-box w3-card-2">
+            <header>
+                <h4>Search Blood Group</h4>
+            </header>
+            <hr>
+            <form action="app/search.php" method="post" id="ajaxForm">
+                <input type="hidden" name="origin" value="register">
+                <label>Blood Group</label>
+                <select name="blood_group" id="blood_group" class="w3-input w3-border">
+                    <option>O+</option>
+                    <option>O-</option>
+                    <option>A+</option>
+                    <option>B+</option>
+                    <option>A-</option>
+                    <option>B-</option>
+                    <option>AB+</option>
+                    <option>AB-</option>
+                </select>
+                <br>
+                <input type="submit" class="w3-btn w3-blue" value="Submit">
+                <input type="reset" class="w3-btn w3-red" value="Reset">
+            </form>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        function navOpen() {
+            if ($("#header").hasClass('visibler'))
+                $("#header").removeClass('visibler');
+            else
+                $("#header").addClass('visibler');
+        }
+    </script>
+</body>
+
+</html>
