@@ -1,0 +1,267 @@
+:root{
+    --bg-color : #fff;
+    --primary-color : rgba(250,0,38,1);
+}
+body{
+    color:rgba(0, 0, 0, .65);
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+td,th{
+    padding:10px !important;
+    text-align: center;
+}
+.m-btm{
+    margin-bottom: 35px;
+}
+.m-top{
+    margin-top:50px;
+}
+.input-box{
+    margin:auto;
+    margin-top:50px;
+    margin-bottom:50px;
+    border-radius: 8px;
+    width:97%;
+    max-width:400px;
+    padding:20px;
+}
+
+
+img.side-big{
+    width:100%;
+}
+.header{
+    background: var(--bg-color);
+    width:100%;
+}
+.logo{
+    width:40px;
+    margin-right: 20px;
+}
+.header-nav{
+    padding:40px 20px 10px 0px;
+    font-size: 16px;
+    display: inline-block;
+    font-weight:500;
+}
+.header-right{
+    padding:40px 20px 10px 0px;
+    position: absolute;
+    right:6%;
+    font-size: 16px;
+    font-weight:500;
+}
+.first-banner{
+    margin:0px 6% 10% 6%;
+}
+.right-alloc-half-content{
+    padding-top:20%;
+}
+.main-quote{
+    color: var(--primary-color);
+    font-size: 270%;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.main-quote-para{
+    width:90%;
+}
+.main-quote-btn{
+    display: inline-block;
+    padding:12px 25px;
+    border:2px solid var(--primary-color);
+    border-radius: 25px;
+    text-align: center;
+    background: var(--bg-color);
+    margin: 25px 0px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.second-banner{
+    margin: 10% 0px;
+}
+img.org-logo-small{
+    width:30px;
+    margin-top: -16px;
+}
+.org-info-small-text{
+    font-size:11px;
+    display:inline-block;
+    padding-left:6px;
+}
+.org-info{
+    margin-top:10%;
+    margin-bottom: 8%;
+    margin-left:2%;
+}
+div.org-info-small{
+    display:inline-block;
+    margin-right:10px;
+}
+
+.contact-image>img{
+    border-radius: 50%;
+    width:150px;
+    text-align:center;
+}
+.contact-banner{
+    margin:10% 0px;
+    text-align: center;
+}
+.contact-header{
+    display:block;
+    margin: 10px 0px;
+}
+.contact-head{
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+span.contact-details{
+    display: block;
+}
+
+.faq-container{
+    padding:7% 0px;
+}
+.faq-head{
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+.question{
+    font-size:18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/*******************************************/
+/* SNACK BAR */
+#snackbar{
+    visibility: hidden;
+    min-width: 250px; 
+    margin-left: -125px;
+    background-color: #333; 
+    color: #fff; 
+    text-align: center; 
+    border-radius: 2px; 
+    padding: 16px; 
+    position: fixed; 
+    z-index: 1; 
+    left: 50%; 
+    bottom: 30px; 
+}
+  
+ 
+#snackbar.show {
+visibility: visible; 
+-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+from {bottom: 0; opacity: 0;} 
+to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+from {bottom: 0; opacity: 0;}
+to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+from {bottom: 30px; opacity: 1;} 
+to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+from {bottom: 30px; opacity: 1;}
+to {bottom: 0; opacity: 0;}
+}
+
+
+/**********************************************/
+
+.footer{
+    padding: 2%;
+    background: #333;
+    color:#fff;
+    text-align: center;
+}
+.footer a{
+    color: #fff !important;
+}
+
+
+
+/****************************/
+
+.humburger-out{
+    visibility: hidden;
+    position: absolute;
+    left:40px;
+    top:30px;
+    z-index:3;
+}
+.humburger-in{
+    width: 30px;
+    height:3px;
+    margin:5px 0px;
+    background: #333;
+}
+.about-in-nav{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .faq-head{
+        margin-top:30px;
+    }
+    .input-box{
+        margin-top: 80px;
+    }
+    .first-banner{
+        margin-top: 10%;
+    }
+    .humburger-out{
+        visibility: visible; 
+    }
+    .visibler{
+        left:0 !important;
+    }
+    .header{
+        transition: .5s;
+        position: fixed;
+        z-index:2;
+        top:0px;
+        left:-100%;
+        background: var(--bg-color);
+        height:100vh;
+        width:100%;
+        color: rgba(0, 0, 0, .8);
+        padding:10%;
+        padding-top: 100px;
+        margin-left:0px !important;
+    }
+    .logo{
+        width:40px;
+        margin-right: 20px;
+        display:none;
+    }
+    .header-nav{
+        padding:10px 0px;
+        font-size: 16px;
+        display: block;
+        font-weight:500;
+    }
+    .about-in-nav{
+        position: absolute;
+        display: inline;
+        bottom: 50px;
+    }
+    .about-in-nav>.content{
+        width: 80%;
+    }
+  }
